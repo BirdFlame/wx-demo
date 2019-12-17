@@ -1,0 +1,8 @@
+<!--details/details.wxml-->
+<view class="detials">
+  <text class="details-title">{{title}}</text>
+  <image class='details-img' src='{{imgUrl}}' bindtap='clickImg' mode="aspectFit"></image>
+  <text class="details-content">{{text}}</text>
+  <button plain open-type="share">分享</button>
+  <button class="details-more" plain bindtap="home_navigate">换一条</button>
+</view>

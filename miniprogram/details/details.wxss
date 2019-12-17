@@ -1,0 +1,24 @@
+/* details/details.wxss */
+.details {
+  width: 100%;
+}
+
+.details-title {
+  margin-top: 20rpx;
+  display:block;
+  width: 100%;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.details-img {
+  display: block;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.details-more {
+  margin-top: 40rpx;
+}

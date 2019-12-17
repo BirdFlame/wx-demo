@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "home/home",
+    "details/details"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#082137",
+    "navigationBarTitleText": "一封书信",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
