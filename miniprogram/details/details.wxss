@@ -3,20 +3,19 @@
   width: 100%;
 }
 
-.details-title {
-  margin-top: 20rpx;
-  display:block;
-  width: 100%;
-  text-align: center;
-  font-size: 36rpx;
-  font-weight: 700;
+.details-content {
+  display: block;
+  padding: 0 40rpx;
+  margin-top: 30rpx;
+  line-height:1.8;
 }
 
 .details-img {
-  display: block;
-  width: 320px;
-  height: 320px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.detials-share {
+  margin-top: 40rpx;  
 }
 
 .details-more {

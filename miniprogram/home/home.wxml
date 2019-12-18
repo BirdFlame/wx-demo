@@ -2,7 +2,7 @@
 <!-- <button bindtap="addData">添加数据</button>
 <button bindtap="getData">查询数据</button> -->
 <view class="conter">
-  <image src="{{imageUrl}}" class="home-img" ></image>
-  <button class="home-btn" plain bindtap="home_navigate">获取更多</button>
+  <!-- <image src="{{imageUrl}}" class="home-img" ></image> -->
+  <button class="home-btn" plain bindtap="home_navigate">查看更多</button>
 </view>
 

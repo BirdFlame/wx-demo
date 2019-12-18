@@ -8,28 +8,25 @@ Page({
   data: {
     imgUrl: "",
     text: '',
-    num:''
+    num: '',
+    imageWidth: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    // db.get({
-    //   success: (res) => {
-    //     console.log(res)
-    //     const data = res.data
-    //     this.setData({
-    //       lists: data
-    //     })
-    //   }
-    // })
+    //获取高度
+    this.setData({
+      imageWidth: wx.getSystemInfoSync().windowWidth + 'px'
+    })
+
     function getRandom(start, end, fixed = 0) {
       let differ = end - start
       let random = Math.random()
       return (start + differ * random).toFixed(fixed)
     }
-    let index = getRandom(0, 65)
+    let index = getRandom(0, 64)
     this.setData({
       num: index
     })
@@ -44,9 +41,6 @@ Page({
         })
       }
     })
-    
-    
-
   },
 
   /**
@@ -108,13 +102,13 @@ Page({
       complete: function(res) {},
     })
   },
-  home_navigate(){
+  details_more() {
     function getRandom(start, end, fixed = 0) {
       let differ = end - start
       let random = Math.random()
       return (start + differ * random).toFixed(fixed)
     }
-    let index = getRandom(0, 65)
+    let index = getRandom(0, 64)
     this.setData({
       num: index
     })
@@ -122,7 +116,7 @@ Page({
       index: this.data.num
     }).get({
       success: (res) => {
-        let content=res.data[0]
+        let content = res.data[0]
         this.setData({
           text: content.text,
           imgUrl: content.url
@@ -130,5 +124,5 @@ Page({
       }
     })
   }
-  
+
 })

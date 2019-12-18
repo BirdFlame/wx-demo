@@ -1,15 +1,21 @@
 /* miniprogram/home/home.wxss */
 
+page {
+  overflow: hidden;
+  position: fixed;
+  background-image: url('https://6779-gyx-cje9i-1300924084.tcb.qcloud.la/bg/4ecb6dc0440a6d6e3142d06c4d250de760132c1655805-3rAj5n_fw658.gif?sign=4cfb9b26c3c047ea77758c3c4032273c&t=1576635069');
+  margin: 0px;
+  background-size: 100% 100%;
+}
+
 .conter {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
-.home-img {
-  height: 100vh;
-  width: 100vh;
-}
-
 .home-btn {
-  margin: -100% auto;
+  margin-top: 520rpx;
+  color: #fff !important;
+  border: 1px solid #fff !important;
 }
